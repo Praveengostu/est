@@ -1,3 +1,7 @@
+data "ibm_resource_group" "group" {
+  name = "Default"
+}
+
 resource "ibm_resource_instance" "es_instance_1" {
   name              = "terraform-integration-1"
   service           = "messagehub"
